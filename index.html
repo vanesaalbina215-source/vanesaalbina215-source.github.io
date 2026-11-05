@@ -1,19 +1,325 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>praktikum SIDJA | Arvanesha Albina</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio Arvanesha Albina</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff0f5;
+    color: #51404a;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 25px;
+    color: #c07896;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* HOME */
+.home {
+    text-align: center;
+    padding: 45px 20px 65px;
+}
+
+.home img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+    margin: 25px 0;
+    box-shadow: 0 5px 20px #d99bb530;
+}
+
+.home h1 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: normal;
+    color: #59404c;
+}
+
+.subtitle {
+    color: #a77e91;
+    margin-top: 15px;
+}
+
+.intro {
+    color: #896d7b;
+    line-height: 1.8;
+    margin: 25px auto;
+    max-width: 450px;
+}
+
+.home a {
+    color: #c07896;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 2;
+}
+
+/* NAVIGASI */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px 10px;
+    border-top: 1px solid #f1dce5;
+    border-bottom: 1px solid #f1dce5;
+    background: #fff7fa;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    text-decoration: none;
+    color: #80576b;
+    font-size: 13px;
+}
+
+/* KONTEN */
+.content {
+    max-width: 750px;
+    margin: auto;
+    padding: 65px 20px 25px;
+}
+
+.number {
+    color: #c07896;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 10px 0 20px;
+    color: #59404c;
+}
+
+.description {
+    color: #896d7b;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* KARTU BIODATA */
+.card {
+    background: #fffafd;
+    padding: 23px;
+    border: 1px solid #f5e1e9;
+    border-radius: 13px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 12px #d99bb515;
+    overflow-wrap: anywhere;
+}
+
+.card small {
+    color: #c07896;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 11px;
+}
+
+.card h3 {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #51404a;
+}
+
+.card p {
+    color: #987d8a;
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* HOBI */
+.hobi {
+    background: #f8dfe9;
+    padding: 25px;
+    border-radius: 13px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #80576b;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 45px 20px;
+    color: #a77e91;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+@media(max-width: 500px) {
+    .home h1 {
+        font-size: 34px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+}
+</style>
 </head>
 
 <body>
-  <h3>MENU PRAKTIKUM</he3>
- <br> praktikum 1 klik <a href="praktikum1.html">disini</a>
- <br> praktikum 2 klik <a href="praktikum2.html">disini</a>
- <br> praktikum 3 klik <a href="praktikum3.html">disini</a>
- <br> praktikum 4 klik <a href="praktikum4.html">disini</a>
- <br> praktikum 5 klik <a href="praktikum5.html">disini</a>
-</body>
 
+<!-- HOME -->
+<header>PORTOFOLIO PRIBADI</header>
+
+<div class="home" id="home">
+
+    <img src="poto.jpg" alt="Foto Profil Arvanesha Albina">
+
+    <h1>Arvanesha Albina</h1>
+
+    <p class="subtitle">
+        Pelajar · TJKT · SMKN 1 Leuwimunding
+    </p>
+
+    <p class="intro">
+        Halo! Saya Arvanesha Albina.
+        Saya senang mempelajari hal baru,
+        menambah pengalaman, dan terus
+        mengembangkan kemampuan diri.
+    </p>
+
+    <a href="#biodata">
+        JELAJAHI PROFIL<br>↓
+    </a>
+
+</div>
+
+<!-- MENU -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#biodata">Biodata</a>
+    <a href="#pendidikan">Pendidikan</a>
+    <a href="#hobi">Hobi</a>
+    <a href="menu.html">
+        Praktikum
+    </a>
+</nav>
+
+<!-- BIODATA -->
+<section class="content" id="biodata">
+
+    <div class="number">01 · TENTANG SAYA</div>
+    <h2>Biodata</h2>
+
+    <p class="description">
+        Saya pribadi yang senang belajar hal baru,
+        mencoba pengalaman baru, dan terus
+        mengembangkan diri agar menjadi lebih baik.
+    </p>
+
+    <div class="card">
+        <small>NAMA LENGKAP</small>
+        <h3>Arvanesha Albina</h3>
+    </div>
+
+    <div class="card">
+        <small>TEMPAT, TANGGAL LAHIR</small>
+        <h3>Cirebon, 08 Juli 2010</h3>
+    </div>
+
+    <div class="card">
+        <small>DOMISILI</small>
+        <h3>Desa Kedungbunder, Kecamatan Gempol, Kabupaten Cirebon</h3>
+    </div>
+
+    <div class="card">
+        <small>EMAIL</small>
+        <h3>vanesaalbina215@gmail.com</h3>
+    </div>
+
+</section>
+
+<!-- PENDIDIKAN -->
+<section class="content" id="pendidikan">
+
+    <div class="number">02 · PERJALANAN BELAJAR</div>
+    <h2>Pendidikan</h2>
+
+    <div class="card">
+        <small>2025 – SEKARANG</small>
+        <h3>SMKN 1 Leuwimunding</h3>
+        <p>
+            Teknik Jaringan Komputer dan Telekomunikasi (TJKT)
+        </p>
+    </div>
+
+    <div class="card">
+        <small>2022 – 2025</small>
+        <h3>SMPN 1 Gempol</h3>
+        <p>Sekolah Menengah Pertama</p>
+    </div>
+
+    <div class="card">
+        <small>2016 – 2022</small>
+        <h3>SDN 1 Palimanan Timur</h3>
+        <p>Sekolah Dasar</p>
+    </div>
+
+</section>
+
+<!-- HOBI -->
+<section class="content" id="hobi">
+
+    <div class="number">03 · DI WAKTU LUANG</div>
+    <h2>Hobi</h2>
+
+    <p class="description">
+        Beberapa kegiatan yang saya sukai
+        untuk mengisi waktu luang.
+    </p>
+
+    <div class="hobi">
+        🍱<br>
+        Makan
+    </div>
+
+    <div class="hobi">
+        🎧<br>
+        Mendengarkan Musik
+    </div>
+
+    <div class="hobi">
+💄<br>
+        Makeup 
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    Terima kasih sudah berkunjung ♡<br>
+    © 2026 | Arvanesha Albina
+</footer>
+
+</body>
 </html>
+
+
